@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.table1{border-collapse: collapse;
+			margin-top: 2px ;}
+			.table1 tr td{width: 200px;}
+			.over{color: red;}
+			
+		</style>
+		<script type="text/javascript">
+			function changecol(x){
+				
+				x.style.color="red";
+			}
+			function changecol2(y){
+				
+				y.style.color="black";
+			}
+			onload=function(){
+				var count=1;
+				var input = document.getElementsByTagName('input');
+				var btn = document.getElementById('btn') ;
+				var table = document.getElementsByTagName('table')[0];
+				var tableId = document.getElementById("table"); 
+				
+			
+			btn.onclick= function (){
+				var Ntr = document.createElement('tr');
+				table.appendChild(Ntr);
+				
+				var Ntd = document.createElement('td');
+				Ntd.innerHTML=count;
+				Ntr.appendChild(Ntd);
+				
+				var Ntd1=document.createElement('td');
+				Ntd1.innerHTML='<p name="xinmin" onmouseover="changecol(this)"  onmouseout="changecol2(this)" >' +input[0].value+'</p>';
+				Ntr.appendChild(Ntd1);
+				
+				
+				
+				var Ntd=document.createElement('td');
+				var sex=document.getElementsByName('xingbie');
+			if(sex[0].checked)	Ntd.innerHTML=input[1].value;
+			else if(sex[1].checked)Ntd.innerHTML=input[2].value;
+				Ntr.appendChild(Ntd);
+				
+				var Ntd=document.createElement('td');
+				Ntd.innerHTML='<a href="javascript:;" rel="external nofollow">删除</a>';
+				Ntr.appendChild(Ntd);
+				
+				Ntd.getElementsByTagName('a')[0].onclick=function(){
+					table.removeChild(this.parentNode.parentNode);
+				}
+			
+			
+			count=count+1;}
+			
+			}
+		</script>
+	</head>
+	<body>
+		<div><div>姓名<input type="text" name="xingming" value="" onmouseover="" style="color: ;">性别
+			<input type="radio" name="xingbie" value="男">男
+			<input type="radio" name="xingbie" value="女">女
+			<input type="button" id="btn" name="btn" style="width: 50px ;"value="添加"></input></div>
+			<table class="table1" id="tbl" border="1">
+				<tr>
+					<td>编号</td>
+					<td>姓名</td>
+					<td>性别</td>
+					<td>操作</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
