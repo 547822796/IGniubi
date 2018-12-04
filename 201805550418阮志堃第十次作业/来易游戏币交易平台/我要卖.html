@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body a{
+				text-decoration: none;
+			}
+			/* body div {
+				border: 1px dotted #000000;
+			} */
+
+			.header {
+				font-size: 23px;
+				color: #5588DD;
+				width: 930px;
+				padding: 10px;
+				border-bottom: 2px solid #899DC4;
+				margin: 0 auto;
+				margin-top: 5px;
+
+			}
+
+			.all {
+				width: 960px;
+				margin: 0 auto;
+			}
+
+			.hang {
+				width: 800px;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+
+			.hang3 {
+				width: 800px;
+				margin: 0 auto;
+				height: 100px;
+				background-color: #F7F7F7;
+				;
+			}
+			.hang3a{width: 300px;
+				margin-top: 10px;
+				margin-left:150px;
+				}
+				.hanglast{width: 800px;margin: 0 auto;
+					margin-top: 20px;
+					text-align: center;
+				}
+			.tijiao{
+				width: 800px;
+				margin: 0 auto;
+				margin-top: 20px;
+				text-align: center;
+			}	
+			.banquan{
+				text-align: center;
+				margin:  0 auto;
+				margin-top: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+			<div class="header">商品信息 <span style="font-size: 13px; color: #FF0000 ;">*请认真填写以下内容</span></div>
+			<div class="details">
+				<div class="hang">游戏名：地下城与勇士</div>
+				<div class="hang"><span style="color: #FF0000 ;">*</span>商品属性：<span style="font-size: 12px;">请务必正确填写以下信息，否则无法通过信息审核</span></div>
+				<div class="hang3">
+					<div class="hang3a"><span style="color: #FF0000 ;">*</span>道具类型：<select name="">
+							<option value="0">装备</option>
+							<option value="1">消耗品</option>
+							<option value="2">材料</option>
+						</select> </div>
+					<div class="hang3a"><span style="color: #FF0000 ;">*</span>使用职业：<select name="">
+							<option value="0">鬼剑士</option>
+							<option value="1">格斗家</option>
+							<option value="2">神枪手</option>
+							<option value="3">魔法师</option>
+							<option value="4">圣职者</option>
+							<option value="5">暗夜使者</option>
+							<option value="6">魔枪士</option>
+							<option value="7">枪剑士</option>
+							<option value="8">通用</option>
+						</select> </div>
+					<div class="hang3a"><span style="color: #FF0000 ;">*</span>道具名称：<input type="text"></div>	
+				</div>
+			<div class="hang"><span style="color: #FF0000 ;">*</span>商品标题：<input type="text" style="width: 450px;"></div>
+			<div class="hang"><span style="color: #FF0000 ;">*</span>个性标题：<input type="text" style="width: 450px;"></div>
+			<div class="hang"><span style="color: #FF0000 ;">*</span>商品单价：<input type="text" style="width: 130px;"> 元 <a href=""><span style="font-size: 12px;">>>查看最新成交价</span></a></div>
+			<div class="hang"><strong>注：商品单价即为商品标题与描述的价格，请正确发布</strong></div>
+			<div class="hang"><span style="color: #FF0000 ;">*</span>发布数量：<input type="text" style="width: 130px;"> 元 <a href=""><span style="font-size: 12px;">>>发布件数规则</span></a></div>
+			<div class="hang"><span style="color: #FF0000 ;">*</span>商品描述：<input type="text" style="width: 450px;height: 50px;"></div>
+			<div class="hang"><span style="color: white ;">*</span>商品图片：<button>上传</button><span style="font-size: 12px;">（上传商品截图能够有效增加商品关注度，获得<img src="img/QQ图片20181204001228.png"/>标识，大幅提升订单成交率，强烈建议上传商品截图。）<br><a href="">>>上传失败请查看</a></span><br></div>
+			<div class="hang"><span style="color: white ;">*</span>客服暗号：<input type="text" placeholder="请输入5位数字暗号" style="width: 130px;"> <span style="font-size: 12px;">客服联系您时客服会主动提供暗号，若未提供客服暗号则为骗子。</span>
+			</span></div>
+			</div>
+			<div class="header">交易选项</div>
+			<div class="details">
+				<div class="hang">使用<abbr title="押金是卖家在来易发布商品时预先交纳的诚信保证金，是卖家为买家提供的一种诚信保障。如果因卖家无货、缺货、自身等原因导致交易取消，则该笔交易的相应诚信保证金将赔付给买家。预交押金后，来易将在系统中优先推荐卖家出售的商品，提高卖家商品的关注度。
+押金的收费标准：每发布一件商品冻结10元押金，发布两件则冻结20元……以此类推。">押金：</abbr><input type="radio" name="yajin">是<input type="radio" name="yajin">否<span style="font-size: 12px;"> (预交押金后，来易将优先推荐该商品，提高商品关注度。)</span></div>
+				<div class="hang">是否与卖家有过联系：<input type="radio" name="lianxi">是<input type="radio" name="lianxi">否</div>
+			<div class="hang"><span style="color: #FF0000 ;">*</span>方便交易时间：<select name="">
+							<option value="0">请选择</option>
+							<option value="1">00：00</option>
+							<option value="2">01：00</option>
+							<option value="3">02：00</option>
+							<option value="4">03：00</option>
+							<option value="5">04：00</option>
+							<option value="6">05：00</option>
+							<option value="7">06：00</option>
+							<option value="8">07：00</option>
+							<option value="9">08：00</option>
+							<option value="10">09：00</option>
+							<option value="11">10：00</option>
+							<option value="12">11：00</option>
+							<option value="13">12：00</option>
+							<option value="14">13：00</option>
+							<option value="15">14：00</option>
+							<option value="16">15：00</option>
+							<option value="17">16：00</option>
+							<option value="18">17：00</option>
+							<option value="19">18：00</option>
+							<option value="20">19：00</option>
+							<option value="21">20：00</option>
+							<option value="22">21：00</option>
+							<option value="23">22：00</option>
+							<option value="24">23：00</option>
+							
+							
+						</select> 到 <select name="">
+							<option value="0">请选择</option>
+							<option value="1">00：00</option>
+							<option value="2">01：00</option>
+							<option value="3">02：00</option>
+							<option value="4">03：00</option>
+							<option value="5">04：00</option>
+							<option value="6">05：00</option>
+							<option value="7">06：00</option>
+							<option value="8">07：00</option>
+							<option value="9">08：00</option>
+							<option value="10">09：00</option>
+							<option value="11">10：00</option>
+							<option value="12">11：00</option>
+							<option value="13">12：00</option>
+							<option value="14">13：00</option>
+							<option value="15">14：00</option>
+							<option value="16">15：00</option>
+							<option value="17">16：00</option>
+							<option value="18">17：00</option>
+							<option value="19">18：00</option>
+							<option value="20">19：00</option>
+							<option value="21">20：00</option>
+							<option value="22">21：00</option>
+							<option value="23">22：00</option>
+							<option value="24">23：00</option>
+							
+							
+						</select></div>
+						<div class="hanglast"><input type="radio">我同意 <a href="">《来易网络游戏服务网担保交易协议》</a></div>
+						<div class="tijiao"><a href=""><img src="img/QQ图片20181204231637.png"/></a></div>
+			</div>
+			<div class="banquan"><p style="font-size: 15px; color: #999;">-----------Copyright © 2018-2055 laiyi.com----------- 版权所有<p></div>
+		</div>
+		
+	</body>
+</html>
