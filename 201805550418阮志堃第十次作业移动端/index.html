@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- meta使用viewport以确保页面可自由缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- 引入 jQuery Mobile 样式 -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+		<!-- 引入 jQuery 库 -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<!-- 引入 jQuery Mobile 库 -->
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<style>
+			.laiyi{height: 100% ;}
+	.tuyi{float: left;margin-top: 1px;
+		height: 36px;border: 0px solid white;background-color: white;width: 90px;
+	}
+	.sousuo{
+		width: 200px;float: left;height:23px;margin-left: 40px;
+		margin-top: 6px;border-radius: ;
+	}
+	.shuru{
+		border-radius: 18px;
+	}
+	body div{
+		border: 1px solid #f9f9f9;margin: 0 auto;background-color: white;
+	}
+	.leixing{
+		width: 378px;height: 120px;margin-left:-5 px;
+		
+	}
+	.remenshouyou{
+		width: 378px;border-bottom: 1px solid #333;
+	}
+	.shouyou{
+		width: 378px;
+	}
+	.liebiao{
+		width: 378px;
+	}
+</style>
+	</head>
+	<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header" data-position="fixed" data-tap-toggle="false" style="height: 44px;">
+				<div class="tuyi"><img class="laiyi" src="img/QQ图片20181205202505.png" /></div>
+				<div class="sousuo"><input class="shuru" type="text" style="width: 230px;height: 100%;  font-size: 12px;padding-left: 10px;"
+					 data-role="none" placeholder="搜索游戏" /></div>
+			</div>
+
+			<div data-role="content">
+				<div class="leixing">
+					<img style="width: 378px;" src="img/QQ截图20181205204833.png" />
+				</div>
+				<div class="remenshouyou"><span style="text-align: center;color: #f60;">热门手游</span></div>
+				<div class="shouyou"><img src="img/QQ图片20181205211112.png" />
+					<button>更多游戏</button></div>
+				<div class="liebiao">
+					<p>热门推荐</p>
+					<ul data-role="listview" data-inset="true">
+						<li>
+							<a href="#">
+								<img src="img/QQ图片20181205212021.png" style="padding: 10px;">
+								<h2>王者荣耀(手游)精品账号</h2>
+								<p>金币英雄任你挑选，角色转移更安全</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/QQ图片20181205212032.png" style="padding: 10px;">
+								<h2>阴阳师(手游)精品账号</h2>
+								<p>想要SSR?来买自抽号，想抽几次抽几次！</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#">商城</a></li>
+						<li><a href="#">消息</a></li>
+						<li><a href="#">我的</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
